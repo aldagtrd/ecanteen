@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>index</title>
+    <style>
+        body {
+            color: black;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #CAD7DF; 
+        }
+        header {
+            background-color: #CAD7DF;
+            color: black;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #5FA1C7; 
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color:#5FA1C7 ;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>E-Canteen UTDI</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="our menu.html">Our Menu</a>
+        <a href="about us.html">About Us</a>
+        <a href="contact us.html">Contact</a>
+    </nav>
+    <section>
+        <h2>Hello Teknozen! Welcome to E-Canteen UTDI</h2>
+        <p>Order your favorite food and beverages online!</p>
+    </section>
+
+    <section>
+	<h2>Our Menu</h2>
+        <div class="menu-item">
+            <img src="mieayam.png" WIDTH="75" HEIGHT="75">
+            <h3>Mie Ayam</h3>
+            <p>Harga:Rp.8,000</p>
+             <button onclick="orderNow('Mie Ayam')">Order Now</button>
+        </div>
+        <div class="menu-item">
+            <img src="bakso.png" WIDTH="75" HEIGHT="75">
+            <h3>Bakso</h3>
+            <p>Harga:Rp.10,000</p>
+             <button onclick="orderNow('Bakso')">Order Now</button>
+        </div>
+        <div class="menu-item">
+            <img src="batagor.png" WIDTH="75" HEIGHT="75">
+            <h3>Batagor</h3>
+            <p>Harga:Rp.7,000</p>
+            <button onclick="orderNow('Batagor')">Order Now</button>
+        </div>
+        <div class="menu-item">
+            <img src="ayam geprek.png" WIDTH="75" HEIGHT="75">
+            <h3>Ayam Geprek</h3>
+            <p>Harga:Rp.12,000</p>
+            <button onclick="orderNow('Ayam Geprek')">Order Now</button>
+        </div>
+    </script>
+
+	<section>
+        <h2>About Us</h2>
+<centre>
+        <p>Website E-Canteen dibuat agar dapat mempermudah layanan di area kantin Universitas Teknologi Digital Indonesia. Layanan utama yang ditawarkan oleh aplikasi e-Canteen adalah pengaksesan menu yang terdapat pada kantin yang ada dalam Our Menu.<p>Menu yang disediakan beragam pilihan dan tentunya menghemat budget. Baiknya Anda mencari hidangan lezat setelah hari yang melelahkan, E-Canteen UTDI siap membantu Anda.</p>
+</centre>
+    </section>
+
+	<section id="contact">
+        <h2>Contact Us</h2>
+        <p>Jika ada kendala, silakan menghubungi kami di kontak berikut:</p>
+        <p>Email: info@ecanteenutdi.com</p>
+        <p>Phone: +628234567890</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 E-Canteen. All rights reserved.</p>
+	<script>
+	function orderNow(menuItem) {
+            alert('You have ordered: ' + menuItem);
+        }
+	</script>
+    </footer>
+</body>
+</html>

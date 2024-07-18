@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>our menu</title>
+    <style>
+        body {
+            color: black;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #CAD7DF; 
+        }
+        header {
+            background-color: #CAD7DF;
+            color: black;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #5FA1C7; 
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color:#5FA1C7 ;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>E-Canteen UTDI</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="our menu.html">Our Menu</a>
+        <a href="about us.html">About Us</a>
+        <a href="contact us.html">Contact</a>
+    </nav>
+    <section>
+        <h2>Our Menu</h2>
+        <div class="menu-item">
+            <img src="mieayam.png" WIDTH="75" HEIGHT="75">
+            <h3>Mie Ayam</h3>
+            <p>Harga:Rp.8,000</p>
+             <button onclick="orderNow('Mie Ayam')">Order Now</button>
+        </div>
+        <div class="menu-item">
+            <img src="bakso.png" WIDTH="75" HEIGHT="75">
+            <h3>Bakso</h3>
+            <p>Harga:Rp.10,000</p>
+             <button onclick="orderNow('Bakso')">Order Now</button>
+        </div>
+        <div class="menu-item">
+            <img src="batagor.png" WIDTH="75" HEIGHT="75">
+            <h3>Batagor</h3>
+            <p>Harga:Rp.7,000</p>
+            <button onclick="orderNow('Batagor')">Order Now</button>
+        </div>
+        <div class="menu-item">
+            <img src="ayam geprek.png" WIDTH="75" HEIGHT="75">
+            <h3>Ayam Geprek</h3>
+            <p>Harga:Rp.12,000</p>
+            <button onclick="orderNow('Ayam Geprek')">Order Now</button>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 E-Canteen. All rights reserved.</p>
+	    <script>
+        function orderNow(menuItem) {
+            alert('You have ordered: ' + menuItem);
+        }
+    </script>
+    </footer>
+</body>
+</html>
